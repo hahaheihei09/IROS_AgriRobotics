@@ -89,20 +89,21 @@ th,td{
     height: auto; /* Maintain aspect ratio */
     display: block; /* Remove extra space below the image */
   }
+
 .top-left {
-    font-size: 3.5em; /* Adjusted font size */
+    font-size: 3.5em; /* Adjust font size */
     color: #505050;
     background: #fafafa;
-    text-align: center;
-    width: auto; /* Allow container to expand */
-    height: auto; /* Allow container to expand */
+    text-align: left; /* Align text to the left */
+    width: auto; /* Allow the container to expand */
+    height: auto; /* Allow the container to expand */
     position: absolute;
-    padding: 20px; /* Adjusted padding */
-    top: 20px; /* Adjusted top positioning */
-    left: 20px; /* Adjusted left positioning */
-    /*white-space: nowrap; /* Prevent text wrapping */
-    /*border: 2px solid red; /* Temporary debug border */
+    padding: 20px; /* Add padding for spacing */
+    top: 20px; /* Adjust top positioning */
+    left: 20px; /* Adjust left positioning */
+    white-space: normal; /* Allow text to wrap */
   }
+  
   .bottom-right {font-size:2.33em; color: #fafafa; line-height: 1.5em; width: auto; height: 100px; padding: 0px 27px 27px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px; text-shadow: 0px 0px 6px #000000;}
 
 /* Conference Title Logo */
