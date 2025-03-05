@@ -77,7 +77,9 @@ th,td{
 }
 
 /* Website Banner */
-.banner {position: relative; font-family:'Roboto Slab',serif;}
+.banner {position: relative; font-family:'Roboto Slab',serif;  
+    width: 1000px; /* Adjust this value to match your desired width */
+    height: auto; /* Maintain aspect ratio */}
 .top-left {
     font-size: 3.5em; /* Adjusted font size */
     color: #505050;
@@ -89,8 +91,8 @@ th,td{
     padding: 20px; /* Adjusted padding */
     top: 20px; /* Adjusted top positioning */
     left: 20px; /* Adjusted left positioning */
-    white-space: nowrap; /* Prevent text wrapping */
-    border: 2px solid red; /* Temporary debug border */
+    /*white-space: nowrap; /* Prevent text wrapping */
+    /*border: 2px solid red; /* Temporary debug border */
   }
   .bottom-right {font-size:2.33em; color: #fafafa; line-height: 1.5em; width: auto; height: 100px; padding: 0px 27px 27px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px; text-shadow: 0px 0px 6px #000000;}
 
