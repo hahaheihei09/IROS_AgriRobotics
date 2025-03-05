@@ -98,9 +98,7 @@ th,td{
     width: auto; /* Allow the container to expand */
     height: auto; /* Allow the container to expand */
     position: absolute;
-    padding: 20px; /* Add padding for spacing */
-    top: 20px; /* Adjust top positioning */
-    left: 20px; /* Adjust left positioning */
+    padding: 50px; /* Add padding for spacing */
     white-space: normal; /* Allow text to wrap */
   }
   
