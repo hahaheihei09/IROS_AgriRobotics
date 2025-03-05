@@ -77,9 +77,18 @@ th,td{
 }
 
 /* Website Banner */
-.banner {position: relative; font-family:'Roboto Slab',serif;  
-    width: 1000px; /* Adjust this value to match your desired width */
-    height: auto; /* Maintain aspect ratio */}
+.banner {
+    position: relative;
+    width: 1000px; /* Match the banner width */
+    margin: 0 auto; /* Center the banner */
+    overflow: hidden; /* Hide any overflowing content */
+  }
+  
+.banner img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below the image */
+  }
 .top-left {
     font-size: 3.5em; /* Adjusted font size */
     color: #505050;
