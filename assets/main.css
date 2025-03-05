@@ -92,13 +92,15 @@ th,td{
 
 .top-left {
     font-size: 3.5em; /* Adjust font size */
+    line-height: 1.2; /* Adjust line spacing */
+
     color: #505050;
     background: #fafafa;
     text-align: left; /* Align text to the left */
     width: auto; /* Allow the container to expand */
     height: auto; /* Allow the container to expand */
     position: absolute;
-    padding: 50px; /* Add padding for spacing */
+    padding: 20px; /* Add padding for spacing */
     white-space: normal; /* Allow text to wrap */
   }
   
@@ -108,6 +110,8 @@ th,td{
 
 .title1 {
     font-size: 1.2em; /* Adjusted font size */
+    line-height: 1.5; /* Adjust line spacing */
+
     color: #b2132e;
     text-shadow: 1px 1px 3px #c0c0c0;
     margin-right: 10px; /* Added spacing */
@@ -115,6 +119,8 @@ th,td{
   
   .title2 {
     font-size: 1em; /* Adjusted font size */
+    line-height: 1.5; /* Adjust line spacing */
+
     color: #52739e;
     text-shadow: 1px 1px 3px #c0c0c0;
     margin-right: 10px; /* Added spacing */
