@@ -110,7 +110,7 @@ th,td{
 /* Conference Title Logo */
 
 .title1 {
-    font-size: 1.2em; /* Adjusted font size */
+    font-size: 0.8em; /* Adjusted font size */
     line-height: 1.0; /* Adjust line spacing */
     color: #b2132e;
     text-shadow: 1px 1px 3px #c0c0c0;
@@ -118,7 +118,7 @@ th,td{
   }
   
   .title2 {
-    font-size: 1em; /* Adjusted font size */
+    font-size: 0.7em; /* Adjusted font size */
     line-height: 1.0; /* Adjust line spacing */
     color: #52739e;
     text-shadow: 1px 1px 3px #c0c0c0;
