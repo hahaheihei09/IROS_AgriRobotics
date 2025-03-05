@@ -92,13 +92,15 @@ th,td{
 
 .top-left {
     font-size: 3.5em; /* Adjust font size */
-    /* line-height: 1.0; /* Adjust line spacing */
+    line-height: 1.0; /* Adjust line spacing */
     color: #505050;
     background: #fafafa;
     text-align: left; /* Align text to the left */
     width: auto; /* Allow the container to expand */
     height: auto; /* Allow the container to expand */
     position: absolute;
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
     padding: 20px; /* Add padding for spacing */
     white-space: normal; /* Allow text to wrap */
   }
