@@ -202,7 +202,7 @@ td.sponsor:first-child {
 
 /* Increase spacing between the third and fourth logos */
 td.sponsor:nth-child(3) {
-  padding-right: 50px; /* Adjust as needed */
+  padding-right: 40px; /* Adjust as needed */
 }
 
 td.sponsor img {
@@ -239,17 +239,5 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
     td.date{font-size:1em; padding-top:0.5em;}
     td.navigation{font-size:1.1em; padding:0px 10px 0px 10px 0px;}
     table.footer{font-size:0.33em;}
-    td.sponsor {
-      width: 50%; /* 2 logos per row on smaller screens */
-      padding: 0 10px; /* Adjust padding for smaller screens */
-    }
-
-    td.sponsor:first-child {
-        padding-left: 0px; /* Adjust as needed */
-    }
-
-    td.sponsor:nth-child(3) {
-        padding-right: 30%; /* Adjust as needed */
-    }
 }
 
