@@ -126,8 +126,48 @@ th,td{
   }
 .year{color: #505050; font-size:0.67em; font-weight: lighter;}
 
+/* Organizers Section */
+.organizers {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+.organizer {
+  width: 50%;
+  padding: 20px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.organizer img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.organizer b {
+  font-size: 1.2em;
+  color: #52739e;
+}
+
+.organizer i {
+  font-style: italic;
+  color: #505050;
+}
+
+.organizer a {
+  color: #b8860b;
+  text-decoration: none;
+}
+
+.organizer a:hover {
+  color: #b2132e;
+}
 /* Navigation Links (Home, Registration, etc) */
-table.navigation{width:800px;}
+table.navigation{width:900px;}
 td.navigation{font-size:1.67em; white-space:nowrap; width:20%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
 
 /* Sponsor Images */
