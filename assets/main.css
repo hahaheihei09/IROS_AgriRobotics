@@ -168,13 +168,13 @@ th,td{
 }
 
 ol, ul {
-  padding-left: 20px; /* Adjust as needed */
-  margin-left: 30px; /* Remove default margin */
+  padding-left: 10px; /* Adjust as needed */
+  margin-left: 50px; /* Remove default margin */
 }
 
 li {
-  margin-left: 30px; /* Remove default margin */
-  padding-left: 50px; /* Remove default padding */
+  margin-left: 50px; /* Remove default margin */
+  padding-left: 10px; /* Remove default padding */
 }
 /* Navigation Links (Home, Registration, etc) */
 table.navigation{width:900px;}
