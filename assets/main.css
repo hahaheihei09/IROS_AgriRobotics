@@ -181,8 +181,9 @@ table.navigation{width:900px;}
 td.navigation{font-size:1.67em; white-space:nowrap; width:20%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px 0px;}
 
 /* Sponsor Images */
-table.sponsors{width:1000px;}
-td.sponsor{white-space:nowrap; width: 25%; text-align:center; vertical-align:middle; padding:0px 0px 50px 50px;}
+table.sponsors{width:1000px;    
+  margin: 0 auto; /* Center the table */}
+td.sponsor{white-space:nowrap; width: 25%; text-align:center; vertical-align:middle; padding:0;}
 td.sponsor img{width: 100%}
 
 /* The Table on the Program Page */
@@ -215,5 +216,8 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
     td.date{font-size:1em; padding-top:0.5em;}
     td.navigation{font-size:1.1em; padding:0px 10px 0px 10px 0px;}
     table.footer{font-size:0.33em;}
+    td.sponsor {
+      width: 50%; /* 2 logos per row on smaller screens */
+  }
 }
 
