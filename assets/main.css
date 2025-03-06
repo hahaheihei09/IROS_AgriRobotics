@@ -181,11 +181,34 @@ table.navigation{width:900px;}
 td.navigation{font-size:1.67em; white-space:nowrap; width:20%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px 0px;}
 
 /* Sponsor Images */
-table.sponsors{width:1000px;    
-  margin: 0 auto; /* Center the table */}
-td.sponsor{white-space:nowrap; width: 25%; text-align:center; vertical-align:middle; padding:0;}
-td.sponsor img{width: 100%}
+/* Sponsor Images */
+table.sponsors {
+  width: 1000px; /* Adjust as needed */
+  margin: 0 auto; /* Center the table */
+}
 
+td.sponsor {
+  white-space: nowrap;
+  width: 25%; /* 4 logos per row */
+  text-align: center;
+  vertical-align: middle;
+  padding: 0 10px; /* Add horizontal padding for spacing */
+}
+
+/* Reduce left padding for the first logo */
+td.sponsor:first-child {
+  padding-left: 0px; /* Adjust as needed */
+}
+
+/* Increase spacing between the third and fourth logos */
+td.sponsor:nth-child(3) {
+  padding-right: 50px; /* Adjust as needed */
+}
+
+td.sponsor img {
+  width: 100%; /* Ensure images fill the cell */
+  max-width: 200px; /* Limit logo size */
+}
 /* The Table on the Program Page */
 td.room{padding: 4px 12px 4px 4px; width: 90%; vertical-align:bottom; font-size:1.67em; color: #52739e; height:32px;}
 td.date{white-space:nowrap; width:130px; text-align:right; vertical-align:top; padding:4px 16px 0px 0px;}
@@ -218,6 +241,15 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
     table.footer{font-size:0.33em;}
     td.sponsor {
       width: 50%; /* 2 logos per row on smaller screens */
-  }
+      padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+
+    td.sponsor:first-child {
+        padding-left: 0px; /* Adjust as needed */
+    }
+
+    td.sponsor:nth-child(3) {
+        padding-right: 30%; /* Adjust as needed */
+    }
 }
 
