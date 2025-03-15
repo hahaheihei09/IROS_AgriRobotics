@@ -166,7 +166,31 @@ th,td{
 .organizer a:hover {
   color: #b2132e;
 }
+.speakers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem auto;
+}
 
+.speaker {
+  flex: 1 1 400px;
+  max-width: 500px;
+  padding: 1.5rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.speaker img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1rem;
+  display: block;
+}
 ol, ul {
   padding-left: 10px; /* Adjust as needed */
   margin-left: 50px; /* Remove default margin */
