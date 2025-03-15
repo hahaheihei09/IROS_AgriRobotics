@@ -166,6 +166,32 @@ th,td{
 .organizer a:hover {
   color: #b2132e;
 }
+.speakers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 1000px; /* Match body width */
+  padding: 0 20px; /* Add breathing room */
+}
+
+.speaker {
+  flex: 1 1 400px; /* Minimum width of 400px */
+  max-width: 480px; /* Maximum width */
+  padding: 1.5rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Constrain text width */
+.speaker p {
+  max-width: 100%;
+  word-wrap: break-word;
+  font-size: 0.9em; /* Slightly smaller text */
+  line-height: 1.4; /* Better readability */
+}
 
 ol, ul {
   padding-left: 10px; /* Adjust as needed */
@@ -239,5 +265,8 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
     td.date{font-size:1em; padding-top:0.5em;}
     td.navigation{font-size:1.1em; padding:0px 10px 0px 10px 0px;}
     table.footer{font-size:0.33em;}
+    .speaker {
+      flex: 1 1 100%;
+      max-width: 100%;}
 }
 
