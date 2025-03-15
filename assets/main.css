@@ -184,13 +184,35 @@ th,td{
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-
+.speaker img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  display: block;
+  object-fit: cover;
+}
 /* Constrain text width */
+.speaker h3{
+  font-family: 'Roboto Slab', serif;
+  color: #52739e;
+  font-size: 1.3em;
+  margin: 0.5em 0;
+  text-align: center;
+}
+
 .speaker p {
+  color: #505050;
+  line-height: 1.4;
+  margin: 0.5em 0;
   max-width: 100%;
   word-wrap: break-word;
-  font-size: 0.9em; /* Slightly smaller text */
-  line-height: 1.4; /* Better readability */
+}
+
+.speaker strong {
+  color: #813c54;
+  display: block;
+  margin: 1em 0 0.5em;
 }
 
 ol, ul {
