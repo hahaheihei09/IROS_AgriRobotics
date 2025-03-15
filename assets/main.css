@@ -1,267 +1,284 @@
 /* main.css */
-
-/* These are the colors and fonts used throughout the webpage.
- * I've listed them here so that a user may easily
- * do a search-and-replace for these to change the site theme.
- *   'Roboto',sans-serif; Font for the title text
- *   'Roboto-Slab',serif; Font for the body text 
- *   #fafafa; Background color of the site
- *   #505050; Foreground (text) color of the site
- *   #52739e; Navy, "Template" in the logo, current page in navigation, special titles in the Program
- *   #b2132e; Reddish, "Conference" in the logo, hover color for links
- *   #813c54; Heading color, titles in the Program
- *   #b8860b; Dark Goldenrod, color for links
- */
-
 @import url('https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab');
 
-*{
-    border:0;
-    font:inherit;
-    font-size:1em;
-    margin:0;
-    padding:0;
-    vertical-align:baseline;
+* {
+    border: 0;
+    font: inherit;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
 }
 
-body{
+body {
     background-color: #fafafa;
     background-size: cover;
     background-attachment: fixed;
-    color: #505050; 
-    text-align:left;
-    font-family:'Roboto',sans-serif;
-    font-size:1em;
-    line-height:1.5em;
+    color: #505050;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
     margin: 60px auto;
     width: 1000px;
 }
 
-a{color: #b8860b; text-decoration:none;}
-a.current{color: #52739e;}
-a.current:hover{color: #e82945;}
-a:hover{color: #b2132e;}
-a:active{color: #e82945;}
-h1,h2,h3,h4{clear:left; color: #813c54; margin:1.5em 0em 1em 0em; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0;}
-h1{font-size:2.67em;}
-h2{font-size:2.00em;}
-h3{font-size:1.67em;}
-h4{font-size:1.33em;}
-p{list-style:none; margin:24px auto 24px auto; padding:0px; width:900px; text-align:left;}
-li a, p a {text-decoration:underline; text-decoration-color:#b8860b;}
-ul{list-style:none; margin:24px auto 24px auto; padding:0px; width:800px; text-align:left;}
-ul li{list-style:none; margin:0px auto 0px auto; padding:0px; text-align:left;}
-i,em{font-style:italic;}
-b,strong{font-weight:bold;}
-sup{
-    vertical-align: super;
+a { color: #b8860b; text-decoration: none; }
+a.current { color: #52739e; }
+a.current:hover { color: #e82945; }
+a:hover { color: #b2132e; }
+a:active { color: #e82945; }
+
+h1, h2, h3, h4 {
+    clear: left;
+    color: #813c54;
+    margin: 1.5em 0 1em 0;
+    font-family: 'Roboto Slab', serif;
+    text-shadow: 1px 1px 2px #d0d0d0;
+}
+
+h1 { font-size: 2.67em; }
+h2 { font-size: 2.00em; }
+h3 { font-size: 1.67em; }
+h4 { font-size: 1.33em; }
+
+p, ul {
+    list-style: none;
+    margin: 24px auto;
+    padding: 0;
+    width: 900px;
+    text-align: left;
+}
+
+li a, p a { text-decoration: underline; text-decoration-color: #b8860b; }
+ul { width: 800px; }
+ul li { list-style: none; margin: 0; padding: 0; }
+
+i, em { font-style: italic; }
+b, strong { font-weight: bold; }
+
+sup, sub {
     font-size: 0.8em;
     line-height: 0;
 }
-sub{
-    vertical-align: sub;
-    font-size: 0.8em;
-    line-height: 0;
-}
-table{
+sup { vertical-align: super; }
+sub { vertical-align: sub; }
+
+table {
     width: 1000px;
     margin: 12px auto 24px auto;
     float: center;
-    /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
-    /*border: 1px solid black;*/
-}
-th,td{
-    text-align: left;
-    /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
-    /*border: 1px solid black;*/
 }
 
-/* Website Banner */
+th, td { text-align: left; }
+
+/* Banner Styles */
 .banner {
     position: relative;
-    width: 1000px; /* Match the banner width */
-    margin: 0 auto; /* Center the banner */
-    overflow: hidden; /* Hide any overflowing content */
-  }
-  
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
 .banner img {
-    width: 100%; /* Make the image fill the container */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove extra space below the image */
-  }
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
 .top-left {
-    font-size: 3.5em; /* Adjust font size */
-    line-height: 1.0; /* Adjust line spacing */
+    font-size: 3.5em;
+    line-height: 1.0;
     color: #505050;
     background: #fafafa;
-    text-align: left; /* Align text to the left */
-    width: auto; /* Allow the container to expand */
-    height: auto; /* Allow the container to expand */
     position: absolute;
-    top: 0px; /* Adjust as needed */
-    left: 0px; /* Adjust as needed */
-    padding: 20px; /* Add padding for spacing */
-    white-space: normal; /* Allow text to wrap */
-  }
-  
-  .bottom-right {font-size:2.33em; color: #fafafa; line-height: 1.5em; width: auto; height: 100px; padding: 0px 27px 27px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px; text-shadow: 0px 0px 6px #000000;}
+    top: 0;
+    left: 0;
+    padding: 20px;
+    white-space: normal;
+}
 
-/* Conference Title Logo */
+.bottom-right {
+    font-size: 2.33em;
+    color: #fafafa;
+    line-height: 1.5em;
+    padding: 0 27px 27px 0;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-shadow: 0 0 6px #000000;
+}
 
+/* Title Styles */
 .title1 {
-    font-size: 0.8em; /* Adjusted font size */
-    line-height: 1.0; /* Adjust line spacing */
+    font-size: 0.8em;
+    line-height: 1.0;
     color: #b2132e;
     text-shadow: 1px 1px 3px #c0c0c0;
-    margin-right: 10px; /* Added spacing */
-  }
-  
-  .title2 {
-    font-size: 0.7em; /* Adjusted font size */
-    line-height: 1.0; /* Adjust line spacing */
+    margin-right: 10px;
+}
+
+.title2 {
+    font-size: 0.7em;
+    line-height: 1.0;
     color: #52739e;
     text-shadow: 1px 1px 3px #c0c0c0;
-    margin-right: 10px; /* Added spacing */
-  }
-.year{color: #505050; font-size:0.67em; font-weight: lighter;}
-
-/* Organizers Section */
-.organizers {
-  width: 100%;
-  max-width: 1000px;
-  margin: 20px auto;
-  border-collapse: collapse;
+    margin-right: 10px;
 }
 
-.organizer {
-  width: 50%;
-  padding: 20px;
-  vertical-align: top;
-  text-align: left;
+.year {
+    color: #505050;
+    font-size: 0.67em;
+    font-weight: lighter;
 }
 
-.organizer img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 10px;
+/* Unified Organizers & Speakers Styles */
+.organizers, .speakers {
+    display: table;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-collapse: collapse;
 }
 
-.organizer b {
-  font-size: 1.2em;
-  color: #52739e;
+.organizer, .speaker {
+    display: table-cell;
+    width: 50%;
+    padding: 20px;
+    vertical-align: top;
+    text-align: left;
 }
 
-.organizer i {
-  font-style: italic;
-  color: #505050;
+.organizer img, .speaker img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
 }
 
-.organizer a {
-  color: #b8860b;
-  text-decoration: none;
+.organizer b, .speaker h3 {
+    font-size: 1.2em;
+    color: #52739e;
+    font-family: 'Roboto Slab', serif;
+    margin: 0.5em 0;
 }
 
-.organizer a:hover {
-  color: #b2132e;
-}
-.speakers {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin: 2rem auto;
+.organizer i, .speaker p:nth-of-type(1) {
+    font-style: italic;
+    color: #505050;
+    display: block;
+    margin: 0.3em 0;
 }
 
-.speaker {
-  flex: 1 1 400px;
-  max-width: 500px;
-  padding: 1.5rem;
-  background: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.organizer p, .speaker p {
+    color: #505050;
+    margin: 0.3em 0;
+    line-height: 1.4;
 }
 
-.speaker img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin: 0 auto 1rem;
-  display: block;
-}
-ol, ul {
-  padding-left: 10px; /* Adjust as needed */
-  margin-left: 50px; /* Remove default margin */
+.organizer a, .speaker a {
+    color: #b8860b;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.5em;
 }
 
-li {
-  margin-left: 50px; /* Remove default margin */
-  padding-left: 10px; /* Remove default padding */
+.organizer a:hover, .speaker a:hover {
+    color: #b2132e;
 }
-/* Navigation Links (Home, Registration, etc) */
-table.navigation{width:900px;}
-td.navigation{font-size:1.67em; white-space:nowrap; width:20%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px 0px;}
 
-/* Sponsor Images */
-/* Sponsor Images */
+/* Speaker Specific Styles */
+.speaker strong {
+    color: #813c54;
+    display: block;
+    margin: 0.8em 0 0.3em;
+}
+
+/* Navigation Styles */
+table.navigation { width: 900px; }
+td.navigation {
+    font-size: 1.67em;
+    white-space: nowrap;
+    width: 20%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0;
+}
+
+/* Sponsor Styles */
 table.sponsors {
-  width: 1000px; /* Adjust as needed */
-  margin: 0 auto; /* Center the table */
+    width: 1000px;
+    margin: 0 auto;
 }
 
 td.sponsor {
-  white-space: nowrap;
-  width: 25%; /* 4 logos per row */
-  text-align: center;
-  vertical-align: middle;
-  padding: 0 10px; /* Add horizontal padding for spacing */
+    white-space: nowrap;
+    width: 25%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0 10px;
 }
 
-/* Reduce left padding for the first logo */
-td.sponsor:first-child {
-  padding-left: 0px; /* Adjust as needed */
+td.sponsor:first-child { padding-left: 0; }
+td.sponsor:nth-child(3) { padding-right: 40px; }
+td.sponsor img { width: 100%; max-width: 200px; }
+
+/* Program Page Styles */
+td.room, td.date, td.title, td.title-special, td.speaker, td.abstract {
+    padding: 4px 12px;
+    vertical-align: top;
 }
 
-/* Increase spacing between the third and fourth logos */
-td.sponsor:nth-child(3) {
-  padding-right: 40px; /* Adjust as needed */
+td.room {
+    width: 90%;
+    font-size: 1.67em;
+    color: #52739e;
+    height: 32px;
+    vertical-align: bottom;
 }
 
-td.sponsor img {
-  width: 100%; /* Ensure images fill the cell */
-  max-width: 200px; /* Limit logo size */
+td.date {
+    white-space: nowrap;
+    width: 130px;
+    text-align: right;
+    padding: 4px 16px 0 0;
 }
-/* The Table on the Program Page */
-td.room{padding: 4px 12px 4px 4px; width: 90%; vertical-align:bottom; font-size:1.67em; color: #52739e; height:32px;}
-td.date{white-space:nowrap; width:130px; text-align:right; vertical-align:top; padding:4px 16px 0px 0px;}
-td.title{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.5em; color: #813c54; height:32px; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0; }
-td.title-special{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.67em; color: #52739e; height:32px; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0;}
-td.speaker{padding: 4px 12px 4px 4px; font-style: italic; font-size:1em; max-height:999999px}
-td.abstract{padding: 4px 12px 12px 4px; font-size:1em; max-height:999999px}
-td.abstract img{display: block; margin: 4px auto 8px auto}
-table.plenary{padding-top: 8px; background: #ffffff;}
 
-/* Registration and Directions iframes and Images */
-iframe.registration{display:block; margin:1em auto 2em auto; width:700px; height:1400px; border:none;}
-iframe.directions{display:block; margin:1em auto 2em auto; width:800px; height:400px; border:none;}
-img.center{display:block; width:67%; margin:1em auto 2em auto;}
+td.title {
+    width: 90%;
+    font-size: 1.5em;
+    color: #813c54;
+    height: 32px;
+    font-family: 'Roboto Slab', serif;
+    text-shadow: 1px 1px 2px #d0d0d0;
+}
 
-/* Flyer Images */
-table.flyers{width:800px;}
-td.flyer{white-space:nowrap; width:50%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
-td.sponsor img{width: 100%}
+td.title-special {
+    font-size: 1.67em;
+    color: #52739e;
+    height: 32px;
+    font-family: 'Roboto Slab', serif;
+    text-shadow: 1px 1px 2px #d0d0d0;
+}
 
-footer{font-size:0.875em; margin-top:12em; text-align:center;}
+td.speaker { font-style: italic; }
+td.abstract img { display: block; margin: 4px auto 8px; }
+table.plenary { padding-top: 8px; background: #ffffff; }
 
-/* My hacky way of making the site mobile-friendly */
+/* Responsive Styles */
 @media only screen and (max-width: 1100px) {
-    h2{font-size:3.00em;}
-    p{font-size:1.5em; line-height:1.5em;}
-    th,td,tr{font-size:1.5em; line-height:1.5em;}
-    td.date{font-size:1em; padding-top:0.5em;}
-    td.navigation{font-size:1.1em; padding:0px 10px 0px 10px 0px;}
-    table.footer{font-size:0.33em;}
+    h2 { font-size: 3.00em; }
+    p { font-size: 1.5em; line-height: 1.5em; }
+    th, td, tr { font-size: 1.5em; line-height: 1.5em; }
+    td.date { font-size: 1em; padding-top: 0.5em; }
+    td.navigation { font-size: 1.1em; padding: 0 10px; }
+    table.footer { font-size: 0.33em; }
 }
 
+footer {
+    font-size: 0.875em;
+    margin-top: 12em;
+    text-align: center;
+}
